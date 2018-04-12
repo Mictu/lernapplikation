@@ -2,22 +2,27 @@
   <div class="Manufacturer">
     <h1>Manufacturer</h1>
     <p>blablablabalablabalbalablabalbal...</p>
+    <CheckBox v-model="checkbox">Click to activate next step</CheckBox>
     <Sidebar></Sidebar>
   </div>
 </template>
 
 <script>
 import Sidebar from '../components/Sidebar.vue'
+import { eventBus } from '../main.js';
+import CheckBox from '../components/CheckBox.vue'
 
 export default {
   name: "Manufacturer",
   data() {
     return {
-      msg: "Hersteller"
+      msg: "Hersteller",
+      checkbox: false
     };
   },
   components: {
-      Sidebar
+      Sidebar,
+      CheckBox,
   }
 };
 </script>

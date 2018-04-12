@@ -3,6 +3,7 @@
     <h1>
         Übersicht des Warenflussprozesses
     </h1>
+    <div id="event-bus">checkbox is {{ isChecked }}</div>
         <div id="home" class="pictures">
             <div class="row align-items-end">
                 <div class="col">
@@ -23,7 +24,7 @@
                         <img src="../SupplyChainGraphics/transport.png" alt="Bild" class="image" />
                     </a>
                     <router-link to="/shipper1">
-                        <button id="shipper1" class="btn btn-info" role="button" :disabled="true">Shipper1</button>
+                        <button id="shipper1" class="btn btn-info" role="button" :disabled="!isChecked">Shipper1</button>
                     </router-link>
                 </div>
                 <div class="col">
@@ -71,9 +72,29 @@
 </template>
 
 <script>
+import { eventBus } from "../main.js";
+
 export default {
-  name: "Home"
-}
+  name: "Home",
+  props: {
+    boxchecked: {
+      type: Boolean
+    }
+  },
+  data() {
+    return {
+      isChecked: this.boxchecked
+    };
+  },
+  created() {
+    eventBus.$on("checkbox-clicked", checked => {
+      console.log("checkbox is " + checked);
+    });
+    eventBus.$on("checkbox-clicked", boxchecked => {
+      this.isChecked = boxchecked;
+    });
+  }
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
