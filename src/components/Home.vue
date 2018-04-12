@@ -10,7 +10,7 @@
                         <img src="../SupplyChainGraphics/manufacturer.png" alt="Bild" class="image" />
                     </a>
                     <router-link to="/manufacturer">
-                        <b-button id="manufacturer" class="btn btn-success" role="button" :disabled="true">Manufacturer</b-button>
+                        <button id="manufacturer" class="btn btn-success" role="button" :disabled="false">Manufacturer</button>
                     </router-link> 
                 </div>
                 <div class="col">
@@ -23,7 +23,7 @@
                         <img src="../SupplyChainGraphics/transport.png" alt="Bild" class="image" />
                     </a>
                     <router-link to="/shipper1">
-                        <b-button id="shipper1" class="btn btn-info" role="button" :disabled="true">Shipper1</b-button>
+                        <button id="shipper1" class="btn btn-info" role="button" :disabled="true">Shipper1</button>
                     </router-link>
                 </div>
                 <div class="col">
@@ -36,7 +36,7 @@
                         <img src="../SupplyChainGraphics/distributor.png" alt="Bild" class="image" />
                     </a>
                     <router-link to="/distributor">
-                        <b-button id="distributor" class="btn btn-warning" role="button" :disabled="true">Distributor</b-button>
+                        <button id="distributor" class="btn btn-warning" role="button" :disabled="true">Distributor</button>
                     </router-link>
                 </div>
                 <div class="col">
@@ -49,7 +49,7 @@
                         <img src="../SupplyChainGraphics/transport2.png" alt="Bild" class="image" />
                     </a>
                     <router-link to="/shipper2">
-                        <b-button id="shipper2" class="btn btn-warning" role="button" :disabled="true">Shipper2</b-button>
+                        <button id="shipper2" class="btn btn-warning" role="button" :disabled="true">Shipper2</button>
                     </router-link>
                 </div>
                 <div class="col">
@@ -62,7 +62,7 @@
                         <img src="../SupplyChainGraphics/retail.png" alt="Bild" class="image" />
                     </a>
                     <router-link to="/retailer">
-                        <b-button id="retailer" class="btn btn-danger" role="button" :disabled="true">Retailer</b-button>
+                        <button id="retailer" class="btn btn-danger" role="button" :disabled="true">Retailer</button>
                     </router-link>
                 </div>
             </div>

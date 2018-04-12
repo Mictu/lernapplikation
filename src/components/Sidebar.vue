@@ -1,39 +1,39 @@
 <template>
     <div id="mySidenav" class="sidenav">
         <router-link to="/" id="sidebarHome">
-            <dif class="navText">
+            <div class="navText">
                 HOME
-            </dif>
+            </div>
             <img src="../Bilder_geschnitten/homebuttonCut.png" alt="Bild" class="image" />
         </router-link>
         <router-link to="/manufacturer" id="sidebarManufacturer">
-            <dif class="navText">
+            <div class="navText">
                HERSTELLER
-            </dif>
+            </div>
             <img src="../SupplyChainGraphics/manufacturer.png" alt="Bild" class="image" />
         </router-link>
         <router-link to="/shipper1" id="sidebarShipper1">
-            <dif class="navText">
+            <div class="navText">
                 LIEFERANT 1
-            </dif>
+            </div>
             <img src="../SupplyChainGraphics/transport.png" alt="Bild" class="image" />
         </router-link>
             <router-link to="/distributor" id="sidebarDistributor">
-            <dif class="navText">
+            <div class="navText">
                 VERTEILER
-            </dif>
+            </div>
             <img src="../SupplyChainGraphics/distributor.png" alt="Bild" class="image" />
         </router-link>
         <router-link to="/shipper2" id="sidebarShipper2">
-            <dif class="navText">
+            <div class="navText">
                 LIEFERANT 2
-            </dif>
+            </div>
             <img src="../SupplyChainGraphics/transport2.png" alt="Bild" class="image" />
         </router-link>
         <router-link to="/retailer" id="sidebarRetailer">
-            <dif class="navText">
+            <div class="navText">
                 VERKÄUFER
-            </dif>
+            </div>
             <img src="../SupplyChainGraphics/retail.png" alt="Bild" class="image" />
         </router-link>
      </div> 
